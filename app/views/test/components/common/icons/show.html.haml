@@ -1,3 +1,13 @@
-= ViewComponents::Common::Icon.new("reputation", "Reputation")
+%nav
+  %ul
+    %li.haml
+      = icon('reputation', "Reputation")
 
-= ViewComponents::Common::GraphicalIcon.new("contributors")
+    %li.view-component
+      = ViewComponents::Common::Icon.new("reputation", "Reputation")
+
+    %li.haml
+      = graphical_icon(:contributors)
+
+    %li.view-component
+      = ViewComponents::Common::GraphicalIcon.new("contributors")
